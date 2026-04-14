@@ -1,0 +1,114 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.PreviewWith>
+        <Border Padding="20">
+            <Button Classes="text_button" Content="забыли пароль?"></Button>
+        </Border>
+    </Design.PreviewWith>
+
+    <!-- // ОСНОВНАЯ КНОПКА // -->
+    
+    <Style Selector="Button.primary_button">
+        <Setter Property="Background" Value="{StaticResource PrimaryBrush}" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="Padding" Value="12,8" />
+        <Setter Property="CornerRadius" Value="8" />
+    </Style>
+    
+    <Style Selector="Button.primary_button:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Foreground" Value="{StaticResource TextInverseBrush}"/>
+    </Style>
+
+    <Style Selector="Button.primary_button:pointerover /template/ ContentPresenter">
+        <Setter Property="Background" Value="{StaticResource PrimaryHoverBrush}"/>
+    </Style>
+    
+    <Style Selector="Button.primary_button:disabled /template/ ContentPresenter">
+        <Setter Property="Background" Value="{StaticResource PrimaryHoverBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource TextInverseBrush}"></Setter>
+    </Style>
+    
+    <!-- // КОНЕЦ ОСНОВНАЯ КНОПКА // -->
+
+    <!-- // КНОПКА В МЕНЮ НАВИГАЦИИ // -->
+    
+    <Style Selector="Button.nav_button">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Foreground" Value="{StaticResource TextPrimaryBrush}"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="Margin" Value="0,2"/>
+        <Setter Property="Padding" Value="12,10"/>
+        <Setter Property="CornerRadius" Value="8"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontWeight" Value="Medium"/>
+    </Style>
+    
+    <Style Selector="Button.nav_button:pointerover /template/ ContentPresenter">
+        <Setter Property="Background" Value="{StaticResource PrimaryLightBrush}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}"/>
+    </Style>
+    
+    <Style Selector="Button.nav_button:pressed /template/ ContentPresenter">
+        <Setter Property="Background" Value="{StaticResource PrimaryBrush}"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="BorderBrush" Value="{StaticResource PrimaryBrush}"/>
+    </Style>
+    
+    <!-- // КОНЕЦ КНОПКА В МЕНЮ НАВИГАЦИИ // -->
+    
+    <!-- // КОНЕЦ КНОПКА ТЕКСТОВАЯ // -->
+    
+    <Style Selector="Button.text_button">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Foreground" Value="{StaticResource TextMutedBrush}" />
+        <Setter Property="Padding" Value="0" />
+        <Setter Property="FontSize" Value="10"></Setter>
+        <Setter Property="BorderThickness" Value="0" />
+    </Style>
+    
+    <Style Selector="Button.text_button:pointerover /template/ ContentPresenter">
+        <Setter Property="Background" Value="Transparent"></Setter>
+        <Setter Property="Foreground" Value="{StaticResource TextPrimaryBrush}"></Setter>
+    </Style>
+    
+    <!-- // КОНЕЦ КНОПКА ТЕКСТОВАЯ // -->
+    
+    <!-- КНОПКА НАЗАД, ВПЕРЁД -->
+    
+    <Style Selector="Button.forward_back_button">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Foreground" Value="{StaticResource TextPrimaryBrush}"/>
+        <Setter Property="MinWidth" Value="32"/>
+        <Setter Property="MinHeight" Value="28"/>
+        <Setter Property="CornerRadius" Value="6"/>
+        <Setter Property="Padding" Value="0"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+    </Style>
+    
+    <Style Selector="Button.forward_back_button:disabled /template/ ContentPresenter">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Foreground" Value="{StaticResource TextMutedBrush}"/>
+    </Style>
+    
+    <Style Selector="Button.forward_back_button:pointerover /template/ ContentPresenter">
+        <Setter Property="Background" Value="{StaticResource SurfaceBrush}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}"/>
+    </Style>
+
+    <Style Selector="Button.forward_back_button:pressed /template/ ContentPresenter">
+        <Setter Property="Background" Value="{StaticResource PrimaryBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource TextInverseBrush}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource PrimaryBrush}"/>
+    </Style>
+    
+    <!-- КОНЕЦ КНОПКА НАЗАД, ВПЕРЁД -->
+    
+</Styles>

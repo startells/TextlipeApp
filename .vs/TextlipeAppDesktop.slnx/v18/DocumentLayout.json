@@ -1,0 +1,157 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DiplomApp\\TextlipeAppDesktop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FD801CAB-5C4F-4469-9B19-EECE4B7A14D8}|TextileDesktopApp\\TextileDesktopApp.csproj|d:\\diplomapp\\textlipeappdesktop\\textiledesktopapp\\views\\loginpageview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{FD801CAB-5C4F-4469-9B19-EECE4B7A14D8}|TextileDesktopApp\\TextileDesktopApp.csproj|solutionrelative:textiledesktopapp\\views\\loginpageview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD801CAB-5C4F-4469-9B19-EECE4B7A14D8}|TextileDesktopApp\\TextileDesktopApp.csproj|d:\\diplomapp\\textlipeappdesktop\\textiledesktopapp\\views\\loginpageview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD801CAB-5C4F-4469-9B19-EECE4B7A14D8}|TextileDesktopApp\\TextileDesktopApp.csproj|solutionrelative:textiledesktopapp\\views\\loginpageview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD801CAB-5C4F-4469-9B19-EECE4B7A14D8}|TextileDesktopApp\\TextileDesktopApp.csproj|d:\\diplomapp\\textlipeappdesktop\\textiledesktopapp\\views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{FD801CAB-5C4F-4469-9B19-EECE4B7A14D8}|TextileDesktopApp\\TextileDesktopApp.csproj|solutionrelative:textiledesktopapp\\views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD801CAB-5C4F-4469-9B19-EECE4B7A14D8}|TextileDesktopApp\\TextileDesktopApp.csproj|d:\\diplomapp\\textlipeappdesktop\\textiledesktopapp\\core\\services\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD801CAB-5C4F-4469-9B19-EECE4B7A14D8}|TextileDesktopApp\\TextileDesktopApp.csproj|solutionrelative:textiledesktopapp\\core\\services\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD801CAB-5C4F-4469-9B19-EECE4B7A14D8}|TextileDesktopApp\\TextileDesktopApp.csproj|d:\\diplomapp\\textlipeappdesktop\\textiledesktopapp\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD801CAB-5C4F-4469-9B19-EECE4B7A14D8}|TextileDesktopApp\\TextileDesktopApp.csproj|solutionrelative:textiledesktopapp\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD801CAB-5C4F-4469-9B19-EECE4B7A14D8}|TextileDesktopApp\\TextileDesktopApp.csproj|d:\\diplomapp\\textlipeappdesktop\\textiledesktopapp\\app.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{FD801CAB-5C4F-4469-9B19-EECE4B7A14D8}|TextileDesktopApp\\TextileDesktopApp.csproj|solutionrelative:textiledesktopapp\\app.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD801CAB-5C4F-4469-9B19-EECE4B7A14D8}|TextileDesktopApp\\TextileDesktopApp.csproj|d:\\diplomapp\\textlipeappdesktop\\textiledesktopapp\\app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD801CAB-5C4F-4469-9B19-EECE4B7A14D8}|TextileDesktopApp\\TextileDesktopApp.csproj|solutionrelative:textiledesktopapp\\app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD801CAB-5C4F-4469-9B19-EECE4B7A14D8}|TextileDesktopApp\\TextileDesktopApp.csproj|d:\\diplomapp\\textlipeappdesktop\\textiledesktopapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD801CAB-5C4F-4469-9B19-EECE4B7A14D8}|TextileDesktopApp\\TextileDesktopApp.csproj|solutionrelative:textiledesktopapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginPageView.axaml",
+              "DocumentMoniker": "D:\\DiplomApp\\TextlipeAppDesktop\\TextileDesktopApp\\Views\\LoginPageView.axaml",
+              "RelativeDocumentMoniker": "TextileDesktopApp\\Views\\LoginPageView.axaml",
+              "ToolTip": "D:\\DiplomApp\\TextlipeAppDesktop\\TextileDesktopApp\\Views\\LoginPageView.axaml",
+              "RelativeToolTip": "TextileDesktopApp\\Views\\LoginPageView.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-12T06:57:42.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginPageView.axaml.cs",
+              "DocumentMoniker": "D:\\DiplomApp\\TextlipeAppDesktop\\TextileDesktopApp\\Views\\LoginPageView.axaml.cs",
+              "RelativeDocumentMoniker": "TextileDesktopApp\\Views\\LoginPageView.axaml.cs",
+              "ToolTip": "D:\\DiplomApp\\TextlipeAppDesktop\\TextileDesktopApp\\Views\\LoginPageView.axaml.cs",
+              "RelativeToolTip": "TextileDesktopApp\\Views\\LoginPageView.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T06:57:42.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.axaml",
+              "DocumentMoniker": "D:\\DiplomApp\\TextlipeAppDesktop\\TextileDesktopApp\\App.axaml",
+              "RelativeDocumentMoniker": "TextileDesktopApp\\App.axaml",
+              "ToolTip": "D:\\DiplomApp\\TextlipeAppDesktop\\TextileDesktopApp\\App.axaml",
+              "RelativeToolTip": "TextileDesktopApp\\App.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-11T18:05:50.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\DiplomApp\\TextlipeAppDesktop\\TextileDesktopApp\\Program.cs",
+              "RelativeDocumentMoniker": "TextileDesktopApp\\Program.cs",
+              "ToolTip": "D:\\DiplomApp\\TextlipeAppDesktop\\TextileDesktopApp\\Program.cs",
+              "RelativeToolTip": "TextileDesktopApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T17:32:42.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.axaml.cs",
+              "DocumentMoniker": "D:\\DiplomApp\\TextlipeAppDesktop\\TextileDesktopApp\\App.axaml.cs",
+              "RelativeDocumentMoniker": "TextileDesktopApp\\App.axaml.cs",
+              "ToolTip": "D:\\DiplomApp\\TextlipeAppDesktop\\TextileDesktopApp\\App.axaml.cs",
+              "RelativeToolTip": "TextileDesktopApp\\App.axaml.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAIA5wBkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T17:25:06.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "D:\\DiplomApp\\TextlipeAppDesktop\\TextileDesktopApp\\Core\\Services\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "TextileDesktopApp\\Core\\Services\\ServiceCollectionExtensions.cs",
+              "ToolTip": "D:\\DiplomApp\\TextlipeAppDesktop\\TextileDesktopApp\\Core\\Services\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "TextileDesktopApp\\Core\\Services\\ServiceCollectionExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T17:23:26.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.axaml",
+              "DocumentMoniker": "D:\\DiplomApp\\TextlipeAppDesktop\\TextileDesktopApp\\Views\\MainWindow.axaml",
+              "RelativeDocumentMoniker": "TextileDesktopApp\\Views\\MainWindow.axaml",
+              "ToolTip": "D:\\DiplomApp\\TextlipeAppDesktop\\TextileDesktopApp\\Views\\MainWindow.axaml",
+              "RelativeToolTip": "TextileDesktopApp\\Views\\MainWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-11T16:43:17.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindowViewModel.cs",
+              "DocumentMoniker": "D:\\DiplomApp\\TextlipeAppDesktop\\TextileDesktopApp\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeDocumentMoniker": "TextileDesktopApp\\ViewModels\\MainWindowViewModel.cs",
+              "ToolTip": "D:\\DiplomApp\\TextlipeAppDesktop\\TextileDesktopApp\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeToolTip": "TextileDesktopApp\\ViewModels\\MainWindowViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T16:43:17.913Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

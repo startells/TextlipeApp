@@ -1,0 +1,44 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="TextlipeAppDesktop.App"
+             xmlns:local="using:TextlipeAppDesktop"
+             RequestedThemeVariant="Default">
+             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+
+    <Application.DataTemplates>
+        <local:ViewLocator/>
+    </Application.DataTemplates>
+  
+    <Application.Styles>
+        <FluentTheme />
+
+        <Style Selector="TextBlock.h1">
+			
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Margin" Value="5"/>
+
+        </Style>
+
+        <Style Selector="CheckBox">
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+        </Style>
+
+        <!--  These styles add some useful feedback for the user  -->
+        <Style Selector="CheckBox:pointerover /template/ Grid#RootGrid">
+            <Setter Property="Background" Value="{DynamicResource SystemAccentColorLight3}" />
+        </Style>
+
+        <Style Selector="Button:disabled PathIcon">
+			<Setter Property="Opacity" Value="0.4"/>
+        </Style>
+
+    </Application.Styles>
+
+    <Application.Resources>
+        <!--  These are re-usable Icon data. You can get the path data from svg-files for example  -->
+		<StreamGeometry x:Key="DeleteIconData">The path data</StreamGeometry>
+        <StreamGeometry x:Key="AcceptIconData">M11.25 12.75V18H12.75V12.75H18V11.25H12.75V6H11.25V11.25H6V12.75H11.25Z</StreamGeometry>
+    </Application.Resources>
+
+</Application>

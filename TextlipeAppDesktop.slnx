@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Core.Library/Core.Library.csproj" />
+  <Project Path="TextileApi/TextileApi.csproj" />
+  <Project Path="TextileDesktopApp/TextileDesktopApp.csproj" Id="fd801cab-5c4f-4469-9b19-eece4b7a14d8" />
+</Solution>
