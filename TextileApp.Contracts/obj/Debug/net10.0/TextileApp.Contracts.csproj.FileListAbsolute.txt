@@ -1,0 +1,12 @@
+D:\DiplomApp\TextlipeApp\TextileApp.Contracts\bin\Debug\net10.0\TextileApp.Contracts.deps.json
+D:\DiplomApp\TextlipeApp\TextileApp.Contracts\bin\Debug\net10.0\TextileApp.Contracts.dll
+D:\DiplomApp\TextlipeApp\TextileApp.Contracts\bin\Debug\net10.0\TextileApp.Contracts.pdb
+D:\DiplomApp\TextlipeApp\TextileApp.Contracts\obj\Debug\net10.0\TextileApp.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\DiplomApp\TextlipeApp\TextileApp.Contracts\obj\Debug\net10.0\TextileApp.Contracts.AssemblyInfoInputs.cache
+D:\DiplomApp\TextlipeApp\TextileApp.Contracts\obj\Debug\net10.0\TextileApp.Contracts.AssemblyInfo.cs
+D:\DiplomApp\TextlipeApp\TextileApp.Contracts\obj\Debug\net10.0\TextileApp.Contracts.csproj.CoreCompileInputs.cache
+D:\DiplomApp\TextlipeApp\TextileApp.Contracts\obj\Debug\net10.0\TextileApp.Contracts.sourcelink.json
+D:\DiplomApp\TextlipeApp\TextileApp.Contracts\obj\Debug\net10.0\TextileApp.Contracts.dll
+D:\DiplomApp\TextlipeApp\TextileApp.Contracts\obj\Debug\net10.0\refint\TextileApp.Contracts.dll
+D:\DiplomApp\TextlipeApp\TextileApp.Contracts\obj\Debug\net10.0\TextileApp.Contracts.pdb
+D:\DiplomApp\TextlipeApp\TextileApp.Contracts\obj\Debug\net10.0\ref\TextileApp.Contracts.dll

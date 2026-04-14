@@ -1,0 +1,261 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:TextileApp.AvaloniaClient.ViewModels"
+             x:DataType="vm:LoginPageViewModel"
+             x:CompileBindings="False"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="TextileApp.AvaloniaClient.Views.LoginPageView">
+    
+   
+
+    <Grid Background="{StaticResource BackgroundBrush}"
+          ClipToBounds="True">
+
+        <Border Width="240"
+                Height="240"
+                CornerRadius="120"
+                Background="{StaticResource PrimaryLightBrush}"
+                Opacity="0.9"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="70,50,0,0" />
+
+        <Border Width="180"
+                Height="180"
+                CornerRadius="90"
+                Background="{StaticResource SecondaryLightBrush}"
+                Opacity="0.8"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Margin="0,0,90,70" />
+
+        <Border Width="96"
+                Height="96"
+                CornerRadius="48"
+                Background="{StaticResource SurfaceHoverBrush}"
+                Opacity="0.9"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                Margin="0,90,180,0" />
+
+        <ScrollViewer HorizontalScrollBarVisibility="Disabled"
+                      VerticalScrollBarVisibility="Auto"
+                      Padding="16">
+
+            <Grid HorizontalAlignment="Center"
+                  VerticalAlignment="Center"
+                  MinHeight="560">
+
+                <Viewbox Stretch="Uniform"
+                         StretchDirection="DownOnly"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center">
+
+                    <Border Classes="card elevated"
+                            Width="920"
+                            Padding="0">
+
+                        <Grid ColumnDefinitions="1.2*,0.95*">
+
+                    <Border Grid.Column="0"
+                            Background="{StaticResource PrimaryLightBrush}"
+                            CornerRadius="10,0,0,10"
+                            Padding="36">
+
+                        <Grid RowDefinitions="Auto,18,Auto,14,Auto,18,*,18,Auto">
+
+                            <Border Grid.Row="0"
+                                    Background="{StaticResource SurfaceBrush}"
+                                    BorderBrush="{StaticResource BorderBrush}"
+                                    BorderThickness="1"
+                                    CornerRadius="999"
+                                    Padding="10,4"
+                                    HorizontalAlignment="Left">
+                                <TextBlock Text="TEXTILE DESKTOP"
+                                           Classes="login-kicker" />
+                            </Border>
+
+                            <TextBlock Grid.Row="2"
+                                       Text="Управляйте заказами, клиентами и материалами в одном рабочем пространстве"
+                                       Classes="login-title" />
+
+                            <StackPanel Grid.Row="6"
+                                        Spacing="12">
+
+                                <Border Classes="login-feature">
+                                    <StackPanel Spacing="4">
+                                        <TextBlock Text="Материалы и остатки"
+                                                   Classes="login-feature-title" />
+                                        <TextBlock Text="Следите за доступностью тканей и комплектующих без лишних переходов между окнами."
+                                                   Classes="login-feature-caption" />
+                                    </StackPanel>
+                                </Border>
+
+                                <Border Classes="login-feature">
+                                    <StackPanel Spacing="4">
+                                        <TextBlock Text="Клиенты и заказы"
+                                                   Classes="login-feature-title" />
+                                        <TextBlock Text="Храните все заявки, статусы и детали производства в едином интерфейсе."
+                                                   Classes="login-feature-caption" />
+                                    </StackPanel>
+                                </Border>
+
+                                <Border Classes="login-feature">
+                                    <StackPanel Spacing="4">
+                                        <TextBlock Text="Быстрая ежедневная работа"
+                                                   Classes="login-feature-title" />
+                                        <TextBlock Text="Переходите между разделами за пару кликов и держите рабочий процесс под контролем."
+                                                   Classes="login-feature-caption" />
+                                    </StackPanel>
+                                </Border>
+
+                            </StackPanel>
+
+                            <Border Grid.Row="8"
+                                    Background="{StaticResource SurfaceBrush}"
+                                    BorderBrush="{StaticResource BorderBrush}"
+                                    BorderThickness="1"
+                                    CornerRadius="10"
+                                    Padding="14,10">
+                                <TextBlock Text="Доступ в систему получают только сотрудники предприятия — это защищённая рабочая зона."
+                                           Classes="login-feature-caption" />
+                            </Border>
+
+                        </Grid>
+
+                    </Border>
+
+                    <Grid Grid.Column="1"
+                          Margin="30"
+                          MinWidth="300"
+                          RowDefinitions="Auto,8,Auto,24,Auto,8,Auto,14,Auto,8,Auto,8,Auto,12,Auto,16,Auto">
+
+                        <TextBlock Grid.Row="0"
+                                   Text="С возвращением"
+                                   Classes="login-kicker" />
+
+                        <TextBlock Grid.Row="2"
+                                   Text="Вход в систему"
+                                   Classes="h1" />
+
+                        <TextBlock Grid.Row="4"
+                                   Text="Введите логин и пароль, чтобы продолжить работу с приложением."
+                                   Classes="login-subtitle" />
+
+                        <TextBlock Grid.Row="6"
+                                   Text="Логин"
+                                   Classes="login-label" />
+
+                        <TextBox Grid.Row="8"
+                                 Classes="login-input"
+                                 PlaceholderText="Введите логин"
+                                 Text="{Binding Username, Mode=TwoWay}" />
+
+                        <TextBlock Grid.Row="10"
+                                   Text="Пароль"
+                                   Classes="login-label" />
+
+                        <TextBox Grid.Row="12"
+                                 Classes="login-input"
+                                 PlaceholderText="Введите пароль"
+                                 Text="{Binding Password, Mode=TwoWay}"
+                                 PasswordChar="*" />
+
+                        <Button Grid.Row="14"
+                                Content="Забыли пароль?"
+                                Classes="text_button"
+                                FontWeight="Medium"
+                                HorizontalAlignment="Right" />
+
+                        <StackPanel Grid.Row="16"
+                                    Spacing="12">
+
+                            <TextBlock Text="{Binding ErrorMessage}"
+                                       Foreground="{StaticResource ErrorBrush}"
+                                       TextWrapping="Wrap"
+                                       MinHeight="18" />
+
+                            <Button Content="Войти"
+                                    Command="{Binding LoginCommand}"
+                                    HorizontalAlignment="Stretch"
+                                    HorizontalContentAlignment="Center"
+                                    Height="42"
+                                    Classes="primary_button" />
+
+                            <TextBlock Text="Рабочее пространство швейного предприятия"
+                                       HorizontalAlignment="Center"
+                                       Foreground="{StaticResource TextMutedBrush}"
+                                       FontSize="12" />
+
+                        </StackPanel>
+
+                    </Grid>
+
+                        </Grid>
+
+                    </Border>
+
+                </Viewbox>
+
+            </Grid>
+
+        </ScrollViewer>
+
+    </Grid>
+    
+     <UserControl.Styles>
+        <Style Selector="TextBlock.login-kicker">
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+            <Setter Property="Foreground" Value="{StaticResource PrimaryBrush}" />
+        </Style>
+
+        <Style Selector="TextBlock.login-title">
+            <Setter Property="FontSize" Value="28" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+            <Setter Property="Foreground" Value="{StaticResource TextPrimaryBrush}" />
+            <Setter Property="TextWrapping" Value="Wrap" />
+        </Style>
+
+        <Style Selector="TextBlock.login-subtitle">
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="Foreground" Value="{StaticResource TextSecondaryBrush}" />
+            <Setter Property="TextWrapping" Value="Wrap" />
+        </Style>
+
+        <Style Selector="TextBlock.login-label">
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+            <Setter Property="Foreground" Value="{StaticResource TextSecondaryBrush}" />
+        </Style>
+
+        <Style Selector="TextBox.login-input">
+            <Setter Property="MinHeight" Value="42" />
+            <Setter Property="Padding" Value="12,10" />
+            <Setter Property="CornerRadius" Value="8" />
+        </Style>
+
+        <Style Selector="Border.login-feature">
+            <Setter Property="Background" Value="{StaticResource SurfaceBrush}" />
+            <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="CornerRadius" Value="10" />
+            <Setter Property="Padding" Value="14,12" />
+        </Style>
+
+        <Style Selector="TextBlock.login-feature-title">
+            <Setter Property="FontSize" Value="13" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+            <Setter Property="Foreground" Value="{StaticResource TextPrimaryBrush}" />
+        </Style>
+
+        <Style Selector="TextBlock.login-feature-caption">
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="Foreground" Value="{StaticResource TextMutedBrush}" />
+            <Setter Property="TextWrapping" Value="Wrap" />
+        </Style>
+    </UserControl.Styles>
+    
+</UserControl>

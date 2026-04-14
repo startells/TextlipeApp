@@ -1,0 +1,136 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:TextileApp.AvaloniaClient.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="TextileApp.AvaloniaClient.Views.ShellView"
+             x:DataType="vm:ShellViewModel">
+    
+    <Grid ColumnDefinitions="240,*"
+          ColumnSpacing="12"
+          Margin="12"
+          RowDefinitions="*">
+        
+        <!-- Левая панель -->
+        <Border Grid.Column="0"
+                Classes="card elevated shell-sidebar">
+            
+            <StackPanel Spacing="14">
+                
+                <Border BorderThickness="0,0,0,1"
+                        BorderBrush="{StaticResource BorderBrush}"
+                        Padding="0,2,0,14">
+                    
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        
+                        <Image Source="/Assets/test_avatar.jpg" Width="50" Height="50"
+                               Stretch="UniformToFill">
+                            <Image.Clip>
+                                <EllipseGeometry Rect="0,0,50,50" />
+                            </Image.Clip>
+                        </Image>
+                        
+                        <StackPanel Orientation="Vertical"
+                                    VerticalAlignment="Center"
+                                    Margin="12,0,0,0">
+                            
+                            <TextBlock Text="Пользователь"
+                                       FontWeight="SemiBold"
+                                       FontSize="14"
+                                       Foreground="{StaticResource TextPrimaryBrush}"
+                                       VerticalAlignment="Bottom"/>
+                        
+                            <!-- Роль пользователя -->
+                            <TextBlock Text="Администратор"
+                                       FontSize="12"
+                                       Foreground="{StaticResource TextSecondaryBrush}"
+                                       VerticalAlignment="Top"
+                                       Margin="0,2,0,0"/>
+                            
+                        </StackPanel>
+                        
+                    </StackPanel>
+                    
+                </Border>
+
+                <TextBlock Text="Навигация"
+                           FontSize="12"
+                           FontWeight="SemiBold"
+                           Foreground="{StaticResource TextMutedBrush}" />
+                
+                <Button Content="Материалы"
+                        Classes="nav_button"
+                        Command="{Binding GoMaterialsCommand}" />
+                
+                <Button Content="Клиенты"
+                        Classes="nav_button"
+                        Command="{Binding GoClientsCommand}" />
+                
+            </StackPanel>
+            
+        </Border>
+
+        <!-- Правая часть -->
+        <Grid Grid.Column="1"
+              RowDefinitions="Auto,*"
+              RowSpacing="8">
+            
+            <Grid Grid.Row="0"
+                  ColumnDefinitions="Auto,*"
+                  ColumnSpacing="8">
+
+                <Border Grid.Column="0"
+                        Classes="card shell-toolbar"
+                        HorizontalAlignment="Left">
+
+                    <StackPanel Orientation="Horizontal"
+                                Spacing="4"
+                                VerticalAlignment="Center">
+
+                        <Button Content="←"
+                                Classes="forward_back_button"
+                                Command="{Binding BackCommand}" />
+
+                        <Button Content="→"
+                                Classes="forward_back_button"
+                                Command="{Binding ForwardCommand}" />
+
+                    </StackPanel>
+
+                </Border>
+
+                <Border Grid.Column="1"
+                        BoxShadow="0 6 20 0 #14000000"
+                        Width="220"
+                        HorizontalAlignment="Left"
+                        Background="Transparent"
+                        CornerRadius="10">
+                    
+                    <TextBox 
+                        Classes="shell-search"
+                        Width="220"
+                        HorizontalAlignment="Left"
+                        VerticalContentAlignment="Center"
+                        PlaceholderText="Поиск"/>
+                    
+                </Border>
+                
+
+
+            </Grid>
+            
+            <Border Grid.Row="1"
+                    Classes="card elevated shell-content"
+                    CornerRadius="14">
+                
+                <ContentControl Classes="page"
+                                Content="{Binding ContentNavigation.CurrentViewModel}" />
+                
+            </Border>
+            
+        </Grid>
+        
+    </Grid>
+    
+</UserControl>
