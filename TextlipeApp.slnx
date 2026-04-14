@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="TextileApp.Application/TextileApp.Application.csproj" />
+  <Project Path="TextileApp.AvaloniaClient/TextileApp.AvaloniaClient.csproj" />
+  <Project Path="TextileApp.Contracts/TextileApp.Contracts.csproj" />
+  <Project Path="TextileApp.Domain/TextileApp.Domain.csproj" />
+  <Project Path="TextileApp.Infrastructure/TextileApp.Infrastructure.csproj" />
+  <Project Path="TextileApp.WebApi/TextileApp.WebApi.csproj" />
+</Solution>
