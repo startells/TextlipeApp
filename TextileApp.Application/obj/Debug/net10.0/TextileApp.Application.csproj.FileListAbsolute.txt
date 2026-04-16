@@ -10,3 +10,9 @@ D:\DiplomApp\TextlipeApp\TextileApp.Application\obj\Debug\net10.0\TextileApp.App
 D:\DiplomApp\TextlipeApp\TextileApp.Application\obj\Debug\net10.0\refint\TextileApp.Application.dll
 D:\DiplomApp\TextlipeApp\TextileApp.Application\obj\Debug\net10.0\TextileApp.Application.pdb
 D:\DiplomApp\TextlipeApp\TextileApp.Application\obj\Debug\net10.0\ref\TextileApp.Application.dll
+D:\DiplomApp\TextlipeApp\TextileApp.Application\bin\Debug\net10.0\TextileApp.Contracts.dll
+D:\DiplomApp\TextlipeApp\TextileApp.Application\bin\Debug\net10.0\TextileApp.Domain.dll
+D:\DiplomApp\TextlipeApp\TextileApp.Application\bin\Debug\net10.0\TextileApp.Contracts.pdb
+D:\DiplomApp\TextlipeApp\TextileApp.Application\bin\Debug\net10.0\TextileApp.Domain.pdb
+D:\DiplomApp\TextlipeApp\TextileApp.Application\obj\Debug\net10.0\TextileApp.Application.csproj.AssemblyReference.cache
+D:\DiplomApp\TextlipeApp\TextileApp.Application\obj\Debug\net10.0\TextileA.26C15FAC.Up2Date

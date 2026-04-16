@@ -7,14 +7,44 @@
   "targets": {
     ".NETCoreApp,Version=v10.0": {
       "TextileApp.Application/1.0.0": {
+        "dependencies": {
+          "TextileApp.Contracts": "1.0.0",
+          "TextileApp.Domain": "1.0.0"
+        },
         "runtime": {
           "TextileApp.Application.dll": {}
+        }
+      },
+      "TextileApp.Contracts/1.0.0": {
+        "runtime": {
+          "TextileApp.Contracts.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "TextileApp.Domain/1.0.0": {
+        "runtime": {
+          "TextileApp.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "TextileApp.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TextileApp.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TextileApp.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

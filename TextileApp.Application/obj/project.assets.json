@@ -1,11 +1,46 @@
 {
   "version": 3,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "TextileApp.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/TextileApp.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TextileApp.Contracts.dll": {}
+        }
+      },
+      "TextileApp.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/TextileApp.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TextileApp.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "TextileApp.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../TextileApp.Contracts/TextileApp.Contracts.csproj",
+      "msbuildProject": "../TextileApp.Contracts/TextileApp.Contracts.csproj"
+    },
+    "TextileApp.Domain/1.0.0": {
+      "type": "project",
+      "path": "../TextileApp.Domain/TextileApp.Domain.csproj",
+      "msbuildProject": "../TextileApp.Domain/TextileApp.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "TextileApp.Contracts >= 1.0.0",
+      "TextileApp.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\kleom\\.nuget\\packages\\": {},
@@ -39,7 +74,14 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\DiplomApp\\TextlipeApp\\TextileApp.Contracts\\TextileApp.Contracts.csproj": {
+              "projectPath": "D:\\DiplomApp\\TextlipeApp\\TextileApp.Contracts\\TextileApp.Contracts.csproj"
+            },
+            "D:\\DiplomApp\\TextlipeApp\\TextileApp.Domain\\TextileApp.Domain.csproj": {
+              "projectPath": "D:\\DiplomApp\\TextlipeApp\\TextileApp.Domain\\TextileApp.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

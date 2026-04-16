@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TextileApp.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ff83cf9ca0ed1a3a39257d2fcf43f21f22d3bdc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f51f72e508a1b78c255864b37d9759f2bbd78c01")]
 [assembly: System.Reflection.AssemblyProductAttribute("TextileApp.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TextileApp.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

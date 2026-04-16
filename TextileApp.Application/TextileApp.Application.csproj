@@ -6,4 +6,13 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\TextileApp.Contracts\TextileApp.Contracts.csproj" />
+      <ProjectReference Include="..\TextileApp.Domain\TextileApp.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="UseCases\Materials\" />
+    </ItemGroup>
+
 </Project>

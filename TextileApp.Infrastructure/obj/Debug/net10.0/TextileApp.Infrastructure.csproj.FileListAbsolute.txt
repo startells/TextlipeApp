@@ -10,3 +10,13 @@ D:\DiplomApp\TextlipeApp\TextileApp.Infrastructure\obj\Debug\net10.0\TextileApp.
 D:\DiplomApp\TextlipeApp\TextileApp.Infrastructure\obj\Debug\net10.0\refint\TextileApp.Infrastructure.dll
 D:\DiplomApp\TextlipeApp\TextileApp.Infrastructure\obj\Debug\net10.0\TextileApp.Infrastructure.pdb
 D:\DiplomApp\TextlipeApp\TextileApp.Infrastructure\obj\Debug\net10.0\ref\TextileApp.Infrastructure.dll
+D:\DiplomApp\TextlipeApp\TextileApp.Infrastructure\bin\Debug\net10.0\TextileApp.Application.dll
+D:\DiplomApp\TextlipeApp\TextileApp.Infrastructure\bin\Debug\net10.0\TextileApp.Contracts.dll
+D:\DiplomApp\TextlipeApp\TextileApp.Infrastructure\bin\Debug\net10.0\TextileApp.Domain.dll
+D:\DiplomApp\TextlipeApp\TextileApp.Infrastructure\bin\Debug\net10.0\TextileApp.Application.pdb
+D:\DiplomApp\TextlipeApp\TextileApp.Infrastructure\bin\Debug\net10.0\TextileApp.Domain.pdb
+D:\DiplomApp\TextlipeApp\TextileApp.Infrastructure\bin\Debug\net10.0\TextileApp.Contracts.pdb
+D:\DiplomApp\TextlipeApp\TextileApp.Infrastructure\obj\Debug\net10.0\TextileApp.Infrastructure.csproj.AssemblyReference.cache
+D:\DiplomApp\TextlipeApp\TextileApp.Infrastructure\obj\Debug\net10.0\TextileA.59B6A18D.Up2Date
+D:\DiplomApp\TextlipeApp\TextileApp.Infrastructure\bin\Debug\net10.0\TextileApp.Infrastructure.runtimeconfig.json
+D:\DiplomApp\TextlipeApp\TextileApp.Infrastructure\obj\Debug\net10.0\TextileApp.Infrastructure.genruntimeconfig.cache

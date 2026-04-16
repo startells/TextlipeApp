@@ -157,3 +157,11 @@ D:\DiplomApp\TextlipeApp\TextileApp.WebApi\obj\Debug\net10.0\refint\TextileApp.W
 D:\DiplomApp\TextlipeApp\TextileApp.WebApi\obj\Debug\net10.0\TextileApp.WebApi.pdb
 D:\DiplomApp\TextlipeApp\TextileApp.WebApi\obj\Debug\net10.0\TextileApp.WebApi.genruntimeconfig.cache
 D:\DiplomApp\TextlipeApp\TextileApp.WebApi\obj\Debug\net10.0\ref\TextileApp.WebApi.dll
+D:\DiplomApp\TextlipeApp\TextileApp.WebApi\bin\Debug\net10.0\TextileApp.Application.dll
+D:\DiplomApp\TextlipeApp\TextileApp.WebApi\bin\Debug\net10.0\TextileApp.Contracts.dll
+D:\DiplomApp\TextlipeApp\TextileApp.WebApi\bin\Debug\net10.0\TextileApp.Domain.dll
+D:\DiplomApp\TextlipeApp\TextileApp.WebApi\bin\Debug\net10.0\TextileApp.Infrastructure.dll
+D:\DiplomApp\TextlipeApp\TextileApp.WebApi\bin\Debug\net10.0\TextileApp.Application.pdb
+D:\DiplomApp\TextlipeApp\TextileApp.WebApi\bin\Debug\net10.0\TextileApp.Contracts.pdb
+D:\DiplomApp\TextlipeApp\TextileApp.WebApi\bin\Debug\net10.0\TextileApp.Domain.pdb
+D:\DiplomApp\TextlipeApp\TextileApp.WebApi\bin\Debug\net10.0\TextileApp.Infrastructure.pdb
