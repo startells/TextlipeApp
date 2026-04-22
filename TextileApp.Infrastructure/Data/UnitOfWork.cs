@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore.Storage;
+using Microsoft.Extensions.Logging;
 using TextileApp.Infrastructure.Data.Repositories;
 
 namespace TextileApp.Infrastructure.Data;
@@ -6,15 +7,19 @@ namespace TextileApp.Infrastructure.Data;
 public class UnitOfWork : IUnitOfWork
 {
     private readonly ApplicationDbContext _context;
+    private readonly ILoggerFactory _loggerFactory;
+    private readonly ILogger<UnitOfWork> _logger;
     private IUserRepository? _userRepository;
     private IDbContextTransaction? _transaction;
     
-    public UnitOfWork(ApplicationDbContext context)
+    public UnitOfWork(ApplicationDbContext context, ILoggerFactory loggerFactory)
     {
         _context = context;
+        _loggerFactory = loggerFactory;
+        _logger = loggerFactory.CreateLogger<UnitOfWork>();
     }
     
-    public IUserRepository Users => _userRepository ??= new UserRepository(_context);
+    public IUserRepository Users => _userRepository ??= new UserRepository(_context, _loggerFactory.CreateLogger<UserRepository>());
 
     public async Task<int> SaveChangesAsync()
     {

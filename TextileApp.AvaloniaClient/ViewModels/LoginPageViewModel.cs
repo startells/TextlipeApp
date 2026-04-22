@@ -1,11 +1,16 @@
 ﻿using System;
+using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using TextileApp.AvaloniaClient.Services;
+using TextileApp.Contracts.DTO.Request;
 
 namespace TextileApp.AvaloniaClient.ViewModels;
 
 public partial class LoginPageViewModel : ViewModelBase
 {
+    private readonly AuthService _authService;
+    
     [ObservableProperty]
     [NotifyCanExecuteChangedFor(nameof(LoginCommand))]
     private string? _username;
@@ -22,19 +27,27 @@ public partial class LoginPageViewModel : ViewModelBase
     private bool CanLogin() =>
         !string.IsNullOrWhiteSpace(Username) &&
         !string.IsNullOrWhiteSpace(Password);
+    
+    public LoginPageViewModel(AuthService authService)
+    {
+        _authService = authService;
+    }
 
     [RelayCommand(CanExecute = nameof(CanLogin))]
-    private void Login()
+    private async Task Login()
     {
-        var ok = true;
-
-        if (!ok)
-        {
-            ErrorMessage = "Неверный логин или пароль";
-            return;
-        }
-
         ErrorMessage = null;
-        LoginSucceeded?.Invoke();
+
+        try
+        {
+            var response = await _authService.LoginAsync(Username, Password);
+            
+            if (response)
+                LoginSucceeded?.Invoke();
+        }
+        catch (Exception e)
+        {
+            ErrorMessage = $"Error: {e.Message}";
+        }
     }
 }

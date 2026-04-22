@@ -4,6 +4,8 @@
     <option name="projectPerEditor">
       <map>
         <entry key="TextileApp.AvaloniaClient/App.axaml" value="TextileApp.AvaloniaClient/TextileApp.AvaloniaClient.csproj" />
+        <entry key="TextileApp.AvaloniaClient/Views/LoginPageView.axaml" value="TextileApp.AvaloniaClient/TextileApp.AvaloniaClient.csproj" />
+        <entry key="TextileApp.AvaloniaClient/Views/ShellView.axaml" value="TextileApp.AvaloniaClient/TextileApp.AvaloniaClient.csproj" />
         <entry key="TextileDesktopApp/App.axaml" value="TextileDesktopApp/TextileDesktopApp.csproj" />
         <entry key="TextileDesktopApp/Theme/DesignTokens.axaml" value="TextileDesktopApp/TextileDesktopApp.csproj" />
         <entry key="TextileDesktopApp/Theme/Styles/Base.axaml" value="TextileDesktopApp/TextileDesktopApp.csproj" />

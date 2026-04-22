@@ -8,4 +8,6 @@ public class User
     public string Email { get; set; } = null!;
     public DateTime CreatedAt { get; set; }
     public bool IsActive { get; set; } = true;
+    
+    public ICollection<UserRole> UserRoles { get; set; } = new List<UserRole>();
 }

@@ -1,7 +1,7 @@
 ﻿using TextileApp.Contracts.DTO.Request;
 using TextileApp.Contracts.DTO.Response;
 
-namespace TextileApp.Application.Services;
+namespace TextileApp.Infrastructure.Services;
 
 public interface IAuthService
 {

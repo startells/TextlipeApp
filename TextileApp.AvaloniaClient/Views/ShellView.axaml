@@ -59,13 +59,15 @@
                            FontWeight="SemiBold"
                            Foreground="{StaticResource TextMutedBrush}" />
                 
-                <Button Content="Материалы"
-                        Classes="nav_button"
-                        Command="{Binding GoMaterialsCommand}" />
-                
-                <Button Content="Клиенты"
-                        Classes="nav_button"
-                        Command="{Binding GoClientsCommand}" />
+                <ItemsControl ItemsSource="{Binding VisibleItems}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Button Content="{Binding Title}"
+                                    Command="{Binding Command}"
+                                    Classes="nav_button"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
                 
             </StackPanel>
             

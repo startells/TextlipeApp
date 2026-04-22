@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <Folder Include="API\Services\" />
-    <Folder Include="Models\" />
     <AvaloniaResource Include="Assets\**" />
   </ItemGroup>
 
@@ -24,7 +23,15 @@
       <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
     </PackageReference>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="10.0.7" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="11.0.0-preview.3.26207.106" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="10.0.7" />
     <PackageReference Include="Tmds.DBus.Protocol" Version="0.92.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TextileApp.Contracts\TextileApp.Contracts.csproj" />
+    <ProjectReference Include="..\TextileApp.Domain\TextileApp.Domain.csproj" />
   </ItemGroup>
 </Project>

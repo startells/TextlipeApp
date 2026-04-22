@@ -165,3 +165,5 @@ D:\DiplomApp\TextlipeApp\TextileApp.WebApi\bin\Debug\net10.0\TextileApp.Applicat
 D:\DiplomApp\TextlipeApp\TextileApp.WebApi\bin\Debug\net10.0\TextileApp.Contracts.pdb
 D:\DiplomApp\TextlipeApp\TextileApp.WebApi\bin\Debug\net10.0\TextileApp.Domain.pdb
 D:\DiplomApp\TextlipeApp\TextileApp.WebApi\bin\Debug\net10.0\TextileApp.Infrastructure.pdb
+D:\DiplomApp\TextlipeApp\TextileApp.WebApi\bin\Debug\net10.0\BCrypt.Net-Next.dll
+D:\DiplomApp\TextlipeApp\TextileApp.WebApi\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

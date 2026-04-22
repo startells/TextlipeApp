@@ -1,6 +1,10 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
 using CommunityToolkit.Mvvm.Input;
+using TextileApp.AvaloniaClient.Models;
 using TextileApp.AvaloniaClient.Services;
+using TextileApp.Domain.Constants;
 
 namespace TextileApp.AvaloniaClient.ViewModels;
 
@@ -8,18 +12,26 @@ public partial class ShellViewModel : ViewModelBase
 {
     private readonly MaterialsPageViewModel _materialsPageViewModel;
     private readonly ClientsPageViewModel _clientsPageViewModel;
-
+    private readonly SessionService _sessionService;
+    
     public NavigationService ContentNavigation { get; }
-
+    public List<NavItem> NavigationItems { get; private set; }
+    public IEnumerable<NavItem> VisibleItems =>
+        NavigationItems.Where(i => i.IsVisible());
+    
     public ShellViewModel(
         NavigationService contentNavigation,
         MaterialsPageViewModel materialsPageViewModel,
-        ClientsPageViewModel clientsPageViewModel)
+        ClientsPageViewModel clientsPageViewModel,
+        SessionService sessionService)
     {
         ContentNavigation = contentNavigation;
         _materialsPageViewModel = materialsPageViewModel;
         _clientsPageViewModel = clientsPageViewModel;
-
+        _sessionService = sessionService;
+        
+        BuildNavigationMenu();
+        
         ContentNavigation.PropertyChanged += OnNavigationPropertyChanged;
 
         // Первая страница после логина
@@ -49,4 +61,23 @@ public partial class ShellViewModel : ViewModelBase
 
     private bool CanGoBack() => ContentNavigation.CanGoBack;
     private bool CanGoForward() => ContentNavigation.CanGoForward;
+
+    private void BuildNavigationMenu()
+    {
+        NavigationItems = new()
+        {
+                new NavItem
+                {
+                    Title = "Материалы",
+                    Command = new RelayCommand(GoMaterials),
+                    IsVisible = () => _sessionService.HasRole(RolesConstants.Manager)
+                },
+                new NavItem
+                {
+                    Title = "Клиенты",
+                    Command = new RelayCommand(GoClients),
+                    IsVisible = () => _sessionService.HasRole(RolesConstants.Admin)
+                }
+        };
+    }
 }

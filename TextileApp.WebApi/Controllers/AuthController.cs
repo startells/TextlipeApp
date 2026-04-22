@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using TextileApp.Application.Services;
 using TextileApp.Contracts.DTO.Request;
+using TextileApp.Infrastructure.Services;
 
 namespace TextileApi.Controllers;
 
@@ -19,9 +19,6 @@ public class AuthController : ControllerBase
     public async Task<IActionResult> Login([FromBody] LoginRequest request)
     {
         var response = await _authService.LoginAsync(request);
-        
-        if (!response.Success)
-            return Unauthorized(response);
 
         return Ok(response);
     }
