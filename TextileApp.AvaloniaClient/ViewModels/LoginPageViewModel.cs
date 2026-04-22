@@ -2,8 +2,8 @@
 using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using TextileApp.AvaloniaClient.API.Services;
 using TextileApp.AvaloniaClient.Services;
-using TextileApp.Contracts.DTO.Request;
 
 namespace TextileApp.AvaloniaClient.ViewModels;
 
@@ -47,7 +47,7 @@ public partial class LoginPageViewModel : ViewModelBase
         }
         catch (Exception e)
         {
-            ErrorMessage = $"Error: {e.Message}";
+            ErrorMessage = $"{e.Message}";
         }
     }
 }

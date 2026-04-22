@@ -2,6 +2,7 @@
 using System;
 using TextileApp.AvaloniaClient.ViewModels;
 using Microsoft.Extensions.Configuration;
+using TextileApp.AvaloniaClient.API.Services;
 
 namespace TextileApp.AvaloniaClient.Services
 {

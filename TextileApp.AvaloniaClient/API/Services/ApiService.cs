@@ -2,10 +2,10 @@
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
-using TextileApp.Contracts.DTO.Request;
+using TextileApp.AvaloniaClient.Services;
 using TextileApp.Contracts.DTO.Response;
 
-namespace TextileApp.AvaloniaClient.Services;
+namespace TextileApp.AvaloniaClient.API.Services;
 
 public class ApiService
 {
@@ -60,7 +60,8 @@ public class ApiService
         if (!response.IsSuccessStatusCode)
         {
             var error = await response.Content.ReadFromJsonAsync<ErrorResponse>();
-            throw new Exception(error?.Message ?? "Ошибка запроса");
+            if (error != null)
+                throw new Exception($"Error {error.Status}: {error.Detail}");
         }
 
         return await response.Content.ReadFromJsonAsync<TResponse>();

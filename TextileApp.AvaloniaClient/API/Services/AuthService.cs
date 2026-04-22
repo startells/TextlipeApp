@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
+using TextileApp.AvaloniaClient.Services;
 
-namespace TextileApp.AvaloniaClient.Services;
+namespace TextileApp.AvaloniaClient.API.Services;
 
 public class AuthService
 {
